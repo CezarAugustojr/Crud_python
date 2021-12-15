@@ -1,5 +1,5 @@
 import Listar
-import main
+import crud
 
 lista = []
 
@@ -42,9 +42,9 @@ while (correto == False):
             if(escolha == 1):
                 print('Cadastrar Produto: ')
                 print('')
-                main.cad(lista)
+                crud.cad(lista)
             elif(escolha == 2):
-                verifica = main.verificar(lista)
+                verifica = crud.verificar(lista)
                 if(verifica == True):
                     print('')
                     Listar.mostralistared(lista)
@@ -53,31 +53,31 @@ while (correto == False):
                     print('')
                     menu = input('Digite qualquer tecla para voltar ao menu !')
             elif(escolha == 3):
-                verifica = main.verificar(lista)
+                verifica = crud.verificar(lista)
                 if(verifica == True):
                     print('Selecionar Produto: ')
                     print('')
-                    main.selec(lista)
+                    crud.selec(lista)
                 else:
                     print("Nenhum produto cadastrado !")
                     print('')
                     menu = input('Digite qualquer tecla para voltar ao menu !')
             elif(escolha == 4):
-                verifica = main.verificar(lista)
+                verifica = crud.verificar(lista)
                 if(verifica == True):
                     print('Alterar Produto: ')
                     print('')
-                    main.Alterar(lista)
+                    crud.Alterar(lista)
                 else:
                     print("Nenhum produto cadastrado !")
                     print('')
                     menu = input('Digite qualquer tecla para voltar ao menu !')
             elif(escolha == 5):
-                verifica = main.verificar(lista)
+                verifica = crud.verificar(lista)
                 if(verifica == True):
                     print('Excluir Produto: ')
                     print('')
-                    main.Excluir(lista)
+                    crud.Excluir(lista)
                 else:
                     print("Nenhum produto cadastrado !")
                     print('')
