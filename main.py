@@ -1,6 +1,8 @@
 import Listar
 import crud
 
+
+
 lista = []
 
 usu_correto = 'Atividade3'
